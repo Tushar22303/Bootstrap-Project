@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>i-Atoms.pricing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        #pricing-section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .pricing-card {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .pricing-card h3 {
+            margin-top: 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .pricing-card h4 {
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #007bff;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+        .pricing-card ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="about">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><i class="fa fa-atom"></i> iAtoms</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"> <i class="bi bi-house-door"></i>
+                                Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="about.html"><i class="bi bi-file-person-fill"></i>
+                                About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="bi bi-person-lines-fill"></i> Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pricing.html"><i class="bi bi-tags-fill"></i> Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Web Designing</a></li>
+                                <li><a class="dropdown-item" href="#">Web Developer</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">UI Designing</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Support Us</a></li>
+                                <li><a class="dropdown-item" href="#">Service</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Pricing section -->
+        <section id="pricing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center my-4 p-2">
+                        <h2>Pricing</h2>
+                        <p class="text-secondary">Choose the plan that best fits your needs. We offer flexible pricing
+                            options to suit your budget and requirements. Whether you're a small business or a large
+                            enterprise, we have a plan that's right for you.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Example Pricing Plans -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card pricing-card">
+                            <div class="card-header">
+                                <h3>Basic Plan</h3>
+                            </div>
+                            <div class="card-body">
+                                <h4>$9.99/month</h4>
+                                <p>Perfect for individuals or small teams just getting started.</p>
+                                <ul>
+                                    <li>Up to 10 projects</li>
+                                    <li>Basic support</li>
+                                    <li>5 GB storage</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card pricing-card">
+                            <div class="card-header">
+                                <h3>Standard Plan</h3>
+                            </div>
+                            <div class="card-body">
+                                <h4>$29.99/month</h4>
+                                <p>Ideal for growing teams and businesses.</p>
+                                <ul>
+                                    <li>Up to 50 projects</li>
+                                    <li>Priority support</li>
+                                    <li>50 GB storage</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card pricing-card">
+                            <div class="card-header">
+                                <h3>Premium Plan</h3>
+                            </div>
+                            <div class="card-body">
+                                <h4>$99.99/month</h4>
+                                <p>Best for large organizations with advanced needs.</p>
+                                <ul>
+                                    <li>Unlimited projects</li>
+                                    <li>24/7 support</li>
+                                    <li>Unlimited storage</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Table -->
+        <div class="container">
+            <h2 class="text-secondary text-center my-3">Compare Plans</h2>
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;"></th>
+                            <th style="width: 22%;">Basic</th>
+                            <th style="width: 22%;">Standard</th>
+                            <th style="width: 22%;">Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Public</th>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Private</th>
+                            <td></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-start">Permissions</th>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Sharing</th>
+                            <td></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Unlimited members</th>
+                            <td></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-start">Extra security</th>
+                            <td></td>
+                            <td></td>
+                            <td><i class="fa-solid fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div class="footer bg-dark mt-5">
+        <div class="container">
+            <footer class="py-3">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                </ul>
+                <p class="text-center text-secondary"><i class="fa fa-atom"></i>
+                    iAtoms © 2024 Company, Inc</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

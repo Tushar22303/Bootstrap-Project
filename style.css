@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.carousel-caption {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.carousel-item img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    opacity: 0.85;
+}
+
+.card img {
+    height: 200px;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .card img {
+        height: 220px;
+    }
+}
+
+.faq {
+    padding: 20px;
+}
+
+.faq .faq-item p {
+    padding: 0 1rem;
+}
+
+.footer_items {
+    gap: 20px;
+}
+
+.footer .footer_items a {
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.footer_items a:hover {
+    color: rgb(242, 183, 36);
+}
+
+@media screen and (max-width: 576px) {
+    .footer_container {
+        flex-direction: column;
+    }
+}

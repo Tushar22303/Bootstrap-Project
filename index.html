@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>i-Atoms</title>
+</head>
+
+<body>
+
+    <section id="home">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid mx-3">
+                <a class="navbar-brand" href="index.html"><i class="fa fa-atom"></i> iAtoms</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#"> <i class="bi bi-house-door"></i>
+                                Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"><i class="bi bi-file-person-fill"></i> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="bi bi-person-lines-fill"></i> Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html"><i class="bi bi-tags-fill"></i> Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Web Designing</a></li>
+                                <li><a class="dropdown-item" href="#">Web Developer</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">UI Designing</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Support Us</a></li>
+                                <li><a class="dropdown-item" href="#">Service</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="mx-4">
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+                        <button class="btn btn-success ms-3" data-bs-toggle="modal"
+                            data-bs-target="#register">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Login Modal -->
+        <div class="container">
+            <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title  text-center" id="exampleModalLabel">Login to i-Atoms <i
+                                    class="bi bi-person-square"></i> </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="Email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+                                        placeholder="Email Here" autocomplete="off">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Password Here" autocomplete="off">
+                                </div>
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Register Modal -->
+        <div class="container">
+            <div class="modal fade" id="register" tabindex="-1" aria-labelledby="register" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title  text-center" id="exampleModalLabel">Create an Account <i
+                                    class="bi bi-person-circle"></i></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="registerForm">
+                                <div class="mb-3">
+                                    <label for="firstname" class="form-label">Firstname</label>
+                                    <input type="text" class="form-control" id="firstname"
+                                        aria-describedby="firstnameHelp" placeholder="Enter Firstname">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Lastname" class="form-label">Lastname</label>
+                                    <input type="text" class="form-control" id="Lastname"
+                                        aria-describedby="lastnameHelp" placeholder="Enter Lastname">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Enter Password" autocomplete="off">
+                                </div>
+                                <button type="submit" class="btn btn-warning">Create an Account</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carouselExampleCaptions" class="carousel  carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"
+                    style="border-radius: 50%; height: 20px; width: 20px; margin-top: 10px; background-color: black;"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                    style="border-radius: 50%; height: 20px; width: 20px; margin-top: 10px; background-color: black;"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                    style="border-radius: 50%; height: 20px; width: 20px; margin-top: 10px; background-color: black;"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/Photo_1.jpg" class="d-block w-100" height="550" loading="lazy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Web Development</h5>
+                        <p>This project involves designing and developing a Modern and responsive website using modern
+                            web
+                            technologies.</p>
+
+                        <button type="button" class="btn btn-danger mx-1">Frontend Development</button>
+                        <button type="button" class="btn btn-warning mx-1">Backend Development</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/Photo_2.jpg" class="d-block w-100" height="550" loading="lazy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Web Designing</h5>
+                        <p>The web designing project focuses on creating visually appealing, user-friendly, and
+                            responsive
+                            designs for a website.</p>
+
+                        <button type="button" class="btn btn-warning mx-1">Web Designing</button>
+                        <button type="button" class="btn btn-danger mx-1">UI Designing</button>
+                        <button type="button" class="btn btn-success mx-1">Graphics Designer</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/Photo_3.jpg" class="d-block w-100" height="550" loading="lazy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Software Development</h5>
+                        <p>This software development project aims to design, develop, and deploy a robust software
+                            solution
+                            that addresses specific business needs.</p>
+
+                        <button type="button" class="btn btn-warning mx-1">S/W Development</button>
+                        <button type="button" class="btn btn-danger mx-1">Mobile App Development</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Cards -->
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card shadow mb-3 bg-body-tertiary rounded">
+                        <img src="Images/About2.png" alt="About1 Image" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger" style="font-size: 1.05rem;">Software Development</h5>
+                            <p class="card-text text-secondary" style="font-size: 0.85rem;">This software development
+                                project aims to
+                                develop, and deploy a robust software solution that addresses specific business
+                                needs.</p>
+                            <a href="#" class="btn btn-danger" style="font-size: 0.9rem;">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card shadow mb-3 bg-body-tertiary rounded">
+                        <img src="Images/About3.png" alt="About1 Image" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger" style="font-size: 1.05rem;">Website Development</h5>
+                            <p class="card-text text-secondary" style="font-size: 0.85rem;">This project involves
+                                designing
+                                and developing a dynamic and responsive website using modern web technologies. </p>
+                            <a href="#" class="btn btn-success" style="font-size: 0.9rem;">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card shadow mb-3 bg-body-tertiary rounded">
+                        <img src="Images/About1.jpg" alt="About1 Image" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger" style="font-size: 1.05rem;">Web Designing</h5>
+                            <p class="card-text text-secondary" style="font-size: 0.85rem;">The web designing project
+                                focuses on creating visually appealing, user-friendly, and responsive designs for a
+                                website.
+                            </p>
+                            <a href="#" class="btn btn-warning" style="font-size: 0.9rem;">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card shadow mb-3 bg-body-tertiary rounded">
+                        <img src="Images/About4.jpg" alt="About1 Image" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title text-danger" style="font-size: 1.05rem;">Software Testing</h5>
+                            <p class="card-text text-secondary" style="font-size: 0.85rem;">This software testing
+                                project
+                                aims to ensure the quality,efficiency ,reliability, and performance of a software
+                                application.</p>
+                            <a href="#" class="btn btn-primary" style="font-size: 0.9rem;">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card border border-secondary mb-sm-4 mb-4">
+                        <div class="card-header text-warning fw-bold">
+                            Web technologies
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Frontend Development</h5>
+                            <p class="card-text text-secondary" style="font-size: 0.85rem; text-align: justify;">This
+                                frontend development project focuses on creating the client-side
+                                interface of a web application. The project aims to deliver a responsive, interactive,
+                                and
+                                visually appealing user experience using modern web technologies and frameworks.Design
+                                the
+                                interface to be accessible to users with disabilities.</p>
+                            <a href="#" class="btn btn-warning">Learn More <i class="bi bi-caret-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="card border border-secondary">
+                        <div class="card-header text-danger fw-bold">
+                            Web technologies
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Backend Development</h5>
+                            <p class="card-text text-secondary" style="font-size: 0.85rem; text-align: justify;">This
+                                backend development project focuses on designing and implementing the server-side logic,
+                                database interactions, and APIs of a web application. The goal is to create a secure,
+                                scalable, and efficient backend infrastructure that supports the frontend application
+                                and
+                                ensures smooth functionality.</p>
+                            <a href="#" class="btn btn-danger">Learn More <i class="bi bi-caret-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Images with Text Side by Side -->
+        <div class="container my-4">
+            <div class="row flex-lg-row align-items-center g-5 py-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="Images/About5.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                        height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-sm-4">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 fs-3 text-danger">Software Testing</h1>
+                    <p class="lead text-secondary fw-bolder" style="font-size: 0.95rem; text-align: justify;">Software
+                        testing is a
+                        crucial phase in
+                        the software development lifecycle, dedicated to verifying that a software application meets
+                        specified requirements and functions correctly under various conditions. This process involves
+                        systematically executing the application to identify any defects or bugs that could affect its
+                        performance, security, or user experience.</p>
+                    <div>
+                        <button type="button" class="btn btn-danger px-4 me-md-2">Test</button>
+                        <button type="button" class="btn btn-outline-success px-4">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row flex-lg-row-reverse flex-md-row-reverse order-md-2 order-sm-2 align-items-center g-5 py-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="Images/About6.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                        height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-sm-4">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 fs-3 text-warning">Communication Skills
+                    </h1>
+                    <p class="lead text-secondary fw-bolder" style="font-size: 0.95rem; text-align: justify;">Effective
+                        communication
+                        skills are
+                        essential in both personal and professional settings, enabling individuals to convey their
+                        ideas,
+                        thoughts, and feelings clearly and confidently. Good communication involves not only speaking
+                        and
+                        writing effectively but also active listening, empathy, and non-verbal cues such as body
+                        language
+                        and eye contact. </p>
+                    <div>
+                        <button type="button" class="btn btn-warning px-4 me-md-2">Communicate</button>
+                        <button type="button" class="btn btn-outline-success px-4">View More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row flex-lg-row align-items-center g-5 py-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="Images/About7.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                        height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-sm-4">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 fs-3 text-danger">Search Engine
+                        Optimization
+                    </h1>
+                    <p class="lead text-secondary fw-bolder" style="font-size: 0.95rem; text-align: justify;">Search
+                        Engine
+                        Optimization (SEO) is a
+                        critical aspect of digital marketing focused on enhancing a website's visibility in search
+                        engine
+                        results. By optimizing various elements of a website, such as content, meta tags, and backlinks,
+                        SEO
+                        aims to improve the site's ranking on search engines like Google.</p>
+                    <div>
+                        <button type="button" class="btn btn-danger px-4 me-md-2">Optimize</button>
+                        <button type="button" class="btn btn-outline-success px-4">View More</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center my-2 text-secondary-emphasis"
+                        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        Frequently
+                        Asked Questions (FAQ)</h3>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="row">
+                    <div class="col-12 faq-item my-3">
+                        <h4 class="text-secondary border-bottom pb-3">1. What services do you offer?</h4>
+                        <p class="text-secondary mt-3">We offer a wide range of software development services including
+                            custom
+                            software development, mobile
+                            app development, web development, cloud solutions, and IT consulting. Our expertise spans
+                            across
+                            various industries and technologies to meet your business needs.</p>
+                    </div>
+                    <div class="col-12 faq-item my-3">
+                        <h4 class="text-secondary border-bottom pb-3">2. How much does it cost to develop a software
+                            application?</h4>
+                        <p class="text-secondary mt-3">The cost of developing a software application varies based on the
+                            project's complexity, features, technology stack, and timeline. We provide detailed project
+                            estimates after understanding your specific requirements during our initial consultation.
+                        </p>
+                    </div>
+                    <div class="col-12 faq-item my-3">
+                        <h4 class="text-secondary border-bottom pb-3">3. How long does it take to develop a software
+                            application?</h4>
+                        <p class="text-secondary mt-3">The development timeline depends on the project's scope and
+                            complexity. On
+                            average, a typical software application can take anywhere from a few months to over a year.
+                            We
+                            follow agile methodologies to ensure timely delivery and flexibility throughout the
+                            development
+                            process.</p>
+                    </div>
+                    <div class="col-12 faq-item my-3">
+                        <h4 class="text-secondary border-bottom pb-3">4. What technologies do you specialize in?</h4>
+                        <p class="text-secondary mt-3">We specialize in a wide range of technologies including but not
+                            limited to
+                            Java, Python, JavaScript, .NET, Ruby on Rails, React, Angular, Node.js, and various cloud
+                            platforms such as AWS, Azure, and Google Cloud. Our team continuously updates their skills
+                            to
+                            stay current with industry trends and emerging technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer bg-dark">
+            <div class="container">
+                <footer class="py-3">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                    </ul>
+                    <p class="text-center text-secondary"><i class="fa fa-atom"></i>
+                        iAtoms © 2024 Company, Inc</p>
+                </footer>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

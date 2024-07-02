@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>i-Atoms.about</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navigation-bar {
+            position: sticky;
+            top: 56px;
+            position: -webkit-sticky;
+            left: 0;
+            width: 100%;
+        }
+
+        .about-section {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.623)), url('Images/bg_image.jpg') center no-repeat;
+            background-size: cover;
+            height: 90vh;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="about">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><i class="fa fa-atom"></i> iAtoms</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="index.html"> <i class="bi bi-house-door"></i>
+                                Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html"><i class="bi bi-file-person-fill"></i>
+                                About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"><i class="bi bi-person-lines-fill"></i> Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html"><i class="bi bi-tags-fill"></i> Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Topics
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Web Designing</a></li>
+                                <li><a class="dropdown-item" href="#">Web Developer</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">UI Designing</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Support Us</a></li>
+                                <li><a class="dropdown-item" href="#">Service</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="navigation-bar bg-dark border-top py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="w-100">
+                        <ul class="d-flex align-items-center justify-content-between pt-2 flex-wrap gx-2"
+                            style="list-style: none;">
+                            <li class="nav-item">
+                                <a href="#" class="text-white text-decoration-none"><i class="fa fa-atom"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="text-white text-decoration-none">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="text-white text-decoration-none">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="text-white text-decoration-none">Enterprise</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="text-white text-decoration-none">Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="text-white text-decoration-none">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="text-white text-decoration-none">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="text-white text-decoration-none"><i
+                                        class="bi bi-cart-check-fill"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- about section -->
+        <section class="about-section">
+            <div class="container w-100 d-flex align-items-center justify-content-center" style="height: 90vh;">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="text-warning">Welcome To iAtoms</h1>
+                        <h4 class="text-primary">Empowering Your Coding Journey</h4>
+                        <p class="text-white">At iAtoms, we are passionate about helping developers of all levels
+                            enhance
+                            their skills,
+                            stay updated with the latest industry trends, and connect with a vibrant community of
+                            like-minded individuals. Our mission is to provide high-quality tutorials, insightful
+                            articles, and practical tips that make coding accessible and enjoyable for everyone.</p>
+
+                        <div class="buttons">
+                            <button class="btn btn-danger">Read More <i
+                                    class="bi bi-arrow-up-right-square"></i></button>
+                            <a class="btn btn-outline-warning" href="#contact-us">Contact Us <i
+                                    class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Images with Text Side by Side -->
+        <div class="container my-4">
+            <div class="row flex-lg-row align-items-center g-5 py-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="Images/About8.jpg" class="d-block mx-lg-auto img-fluid" alt="Coding Tips" width="700"
+                        height="400" loading="lazy">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-sm-4">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 fs-3 text-danger">Advanced JavaScript</h1>
+                    <p class="lead text-secondary fw-bolder" style="font-size: 0.95rem; text-align: justify;">
+                        JavaScript is a versatile language that powers dynamic web applications. Mastering advanced
+                        JavaScript concepts such as closures, asynchronous programming, and design patterns can
+                        significantly improve your coding skills and enhance the performance of your web applications.
+                    </p>
+                    <div>
+                        <button type="button" class="btn btn-danger px-4 me-md-2">Learn More</button>
+                        <button type="button" class="btn btn-outline-primary px-4">Read Articles</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row flex-lg-row-reverse flex-md-row-reverse order-md-2 order-sm-2 align-items-center g-5 py-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="Images/About9.jpg" class="d-block mx-lg-auto img-fluid" alt="Coding Community" width="700"
+                        height="400" loading="lazy">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-sm-4">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 fs-3 text-warning">Coding Community</h1>
+                    <p class="lead text-secondary fw-bolder" style="font-size: 0.95rem; text-align: justify;">
+                        Join our coding community to collaborate with fellow developers, share knowledge, and work on
+                        exciting projects. Engaging with a community of like-minded individuals can help you stay
+                        motivated, learn new skills, and advance your career.
+                    </p>
+                    <div>
+                        <button type="button" class="btn btn-warning px-4 me-md-2">Join Now</button>
+                        <button type="button" class="btn btn-outline-primary px-4">Community Guidelines</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row flex-lg-row align-items-center g-5 py-4">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img src="Images/About10.png" class="d-block mx-lg-auto img-fluid" alt="Web Development" width="700"
+                        height="400" loading="lazy">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 px-sm-4">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 fs-3 text-success">Web Development Trends
+                    </h1>
+                    <p class="lead text-secondary fw-bolder" style="font-size: 0.95rem; text-align: justify;">
+                        Stay ahead of the curve by keeping up with the latest web development trends. Learn about
+                        progressive web apps, serverless architecture, and the newest frameworks to keep your skills
+                        current and your projects cutting-edge.
+                    </p>
+                    <div>
+                        <button type="button" class="btn btn-success px-4 me-md-2">Discover Trends</button>
+                        <button type="button" class="btn btn-outline-primary px-4">Explore More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+        <section id="contact-us">
+            <div class="container">
+                <div class="contact-us">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="contact__title">
+                                <h3 class="text-secondary text-center mb-5">Contact Us</h3>
+                            </div>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label ml-1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter Email" autocomplete="off">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="Images/Coding.gif" height="500" width="500" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <div class="footer bg-dark">
+            <div class="container">
+                <footer class="py-3">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Pricing</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
+                    </ul>
+                    <p class="text-center text-secondary"><i class="fa fa-atom"></i>
+                        iAtoms © 2024 Company, Inc</p>
+                </footer>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
